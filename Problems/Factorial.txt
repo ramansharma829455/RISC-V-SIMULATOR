@@ -1,0 +1,16 @@
+ADDI x4,x0,7
+SW x4,4(x0)
+LW x1,4(x0)
+ADD x5,x0,x1
+ADDI x1,x1,1 
+ADD x3,x0,x0
+ADDI x1,x1,-1 
+ADD x2,x0,x1 
+ADDI x2,x2,-1   
+BEQ x2,x0,24
+ADD x3,x3,x5
+ADDI x2,x2,-1  
+BNE x2,x0,-8
+ADD x5,x0,x3
+BEQ x2,x0,-36
+SW x5,8(x0)

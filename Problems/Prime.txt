@@ -1,0 +1,12 @@
+ADDI x11,x0,2
+ADDI x31,x0,1
+BEQ x11,x10,40
+ADD x12,x10,x0
+ADD x13,x11,x0
+BGE x0,x12,12
+SUB x12,x12,x13
+BEQ x0,x0,-8
+BEQ x12,x0,12
+ADDI x11,x11,1
+BEQ x0,x0,-32
+ADDI x31,x31,-1
